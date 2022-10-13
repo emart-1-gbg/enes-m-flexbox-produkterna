@@ -41,6 +41,7 @@ body {
 
 h1 {
     margin: 40px;
+    margin-bottom: 65px;
     justify-content: center;
     font-size: 400%
 }
@@ -56,8 +57,7 @@ h1 {
 .home-box-design {
     background-color: #393E46;
     width: 400px;
-    height: 250px;
-    line-height: 35px;
+    height: 480px;
     color: #EEEEEE;
     font-size: 120%;
 }
@@ -69,6 +69,12 @@ h1 {
     padding: 2%;
     margin-top: 3%;
     margin-bottom: 70px;
+}
+
+.home-h5 {
+    margin-top: -30px;
+    padding-top: 5px;
+    color: #393E46;
 }
 
 .products-container {
@@ -108,10 +114,9 @@ h2 {
     font-size: 120%;
 }
 
-.seperator {
+hr {
     margin-left: 5%;
     width: 90%;
-    height: 2px;
     background-color: black;
 }
 
@@ -168,4 +173,76 @@ footer {
     padding: 3px;
     box-sizing: border-box;
 
+}
+
+
+/* Animationer */
+
+#fps-animation {
+    animation: fps-animate;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-delay: 10ms;
+}
+
+@keyframes fps-animate {
+    0%, 24% {
+        background-image: url(/img/coverart/cs-go.jpg);
+    }
+
+    25%, 49% {
+        background-image: url(/img/coverart/overwatch.jpg);
+    }
+
+    50%, 74% {
+        background-image: url(/img/coverart/valorant.jpg);
+    }
+
+    75%, 100% {
+        background-image: url(/img/coverart/rainbow-six.jpg);
+    }
+}
+
+
+#openworld-animation {
+    animation: openworld-animate;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-delay: 10ms;
+}
+
+@keyframes openworld-animate {
+    0%, 24% {
+        background-image: url(/img/coverart/gta5.jpg);
+    }
+
+    25%, 49% {
+        background-image: url(/img/coverart/forza-horizon-5.jpg);
+    }
+
+    50%, 74% {
+        background-image: url(/img/coverart/eldern-ring.jpg);
+    }
+
+    75%, 100% {
+        background-image: url(/img/coverart/minecraft.jpg);
+    }
+}
+
+
+#moba-animation {
+    animation: moba-animate;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 10ms;
+}
+
+@keyframes moba-animate {
+    0%, 49% {
+        background-image: url(/img/coverart/league-of-legends.jpg);
+    }
+
+    50%, 100% {
+        background-image: url(/img/coverart/dota2.jpg);
+    }
 }
