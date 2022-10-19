@@ -153,7 +153,7 @@ display: flex;
     background-color: #00ADB5;
     width: 90%;
     margin-left: 40px;
-    padding: 5px 20px 20px 10px;
+    padding: 10px 20px 10px 10px;
     box-sizing: border-box;
 }
 
@@ -173,6 +173,13 @@ footer {
     padding: 3px;
     box-sizing: border-box;
 
+}
+
+.footer-contents {
+    font-size: 100%;
+    line-height: 10px;
+    margin-left: 10px;
+    color: #EEEEEE;
 }
 
 
@@ -246,3 +253,6 @@ footer {
         background-image: url(/img/coverart/dota2.jpg);
     }
 }
+
+/* Products hover and add to cart animations*/
+
