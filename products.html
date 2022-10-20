@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Produkter</title>
         <link rel="stylesheet" href="/Styles/style.css">
+        <script src="/cart-contents.js"></script>
     </head>
     <body>
 
@@ -41,17 +42,30 @@
             </h2>
             <div class="products-container">
 
-                <div class="product-item product-design"> 
-                    <img src="/img/coverart/cs-go.jpg" alt="CSgo coverart"> </div>
+                <div class="product-item product-design" id="fps-1"> 
+                    <img src="/img/coverart/cs-go.jpg" alt="CSgo coverart" 
+                    class="hover-animation"> 
+                </div>
 
-                <div class="product-item product-design"> 
-                    <img src="/img/coverart/overwatch.jpg" alt="overwatch coverart"> </div>
+                <div class="product-item product-design hover-animation" id="fps-2"> 
+                    <!-- 
+                        <img src="/img/coverart/overwatch.jpg" alt="overwatch coverart"
+                    class="hover-animation"> 
+                    -->
 
-                <div class="product-item product-design"> 
-                    <img src="/img/coverart/valorant.jpg" alt="valorant coverart"> </div>
+                    <img src="/img/add-cart.png" alt="add to cart"
+                    class="add-cart-img" height="100px">
+                </div>
 
-                <div class="product-item product-design"> 
-                    <img src="/img/coverart/rainbow-six.jpg" alt="rainbow-six seige coverart"> </div>
+                <div class="product-item product-design" id="fps-3"> 
+                    <img src="/img/coverart/valorant.jpg" alt="valorant coverart" 
+                    class="hover-animation"> 
+                </div>
+
+                <div class="product-item product-design" id="fps-4"> 
+                    <img src="/img/coverart/rainbow-six.jpg" alt="rainbow-six seige coverart"
+                    class="hover-animation"> 
+                </div>
 
             </div>
         </section>
