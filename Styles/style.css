@@ -114,10 +114,6 @@ h2 {
     font-size: 120%;
 }
 
-#fps-2 {
-    background-image: url(/img/coverart/overwatch.jpg);
-}
-
 hr {
     margin-left: 5%;
     width: 90%;
@@ -192,6 +188,7 @@ footer {
     background-color: red;
     margin-left: -150px;
     bottom: 0;
+    
 }
 
 /* Animationer */
@@ -269,18 +266,26 @@ footer {
 
 /* use transition for add to cart img */
 
-/*
+
 .hover-animation:hover {
     animation: move;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation-duration: 500ms;
+    animation-fill-mode:both;
 }
 
 @keyframes move {
+
+    0% {
+        height: 480px;
+        width: 400px;
+        margin: 0px;
+    }
+
     100% {
         height: 490px;
         width: 410px;
-
+        margin-top: -10px;
+        margin-left: -10px;
     }
 }
 
