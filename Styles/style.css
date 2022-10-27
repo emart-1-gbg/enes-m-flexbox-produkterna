@@ -185,10 +185,11 @@ footer {
 .add-cart-img {
     position: absolute;
     z-index: 1;
-    background-color: red;
-    margin-left: -150px;
+    background-color: white;
+    margin-left: -90px;
+    margin-bottom: -70px;
     bottom: 0;
-    
+    scale: 0;
 }
 
 /* Animationer */
@@ -270,8 +271,10 @@ footer {
 .hover-animation:hover {
     animation: move;
     animation-duration: 500ms;
-    animation-fill-mode:both;
+    animation-fill-mode: both;
+    
 }
+
 
 @keyframes move {
 
@@ -289,3 +292,18 @@ footer {
     }
 }
 
+.hover-show-add-cart:hover ~ #add-cart {
+    scale: 0.5;
+}
+
+
+/* test transition animation 
+
+.hover-animation {
+    transition: width 2s;
+}
+
+.hover-animation:hover {
+    width: 500px;
+}
+*/
