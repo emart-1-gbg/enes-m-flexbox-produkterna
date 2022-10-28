@@ -1,3 +1,5 @@
+/* Allmän */
+
 body {
     background-color: #EEEEEE;
     margin: 2px;
@@ -7,10 +9,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.rounded {
+    border-radius: 5%;
+}
+
 .container {
     display: flex;
     justify-content: center; 
 }
+
+/* Nav design */
 
 .nav-item {
     flex-grow: 1;
@@ -38,6 +46,8 @@ body {
 .img-cart {
     padding: 10px 10px 0px 10px;
 }
+
+/* Hem design */
 
 h1 {
     margin: 40px;
@@ -77,6 +87,8 @@ h1 {
     color: #393E46;
 }
 
+/* Produkter design */
+
 .products-container {
     margin-inline: auto;
     display: flex; 
@@ -106,7 +118,7 @@ h2 {
 }
 
 .product-design {
-    background-color: #393E46;
+    background-color: transparent;
     width: 400px;
     height: 480px;
     line-height: 35px;
@@ -120,6 +132,8 @@ hr {
     background-color: black;
 }
 
+/* Varukorg sida design */
+
 .cart-title {
     font-size: 200%;
 }
@@ -132,6 +146,8 @@ hr {
     padding: 10px 0px 20px 20px;
 
 }
+
+/* Kontakter design */
 
 .contacts-content {
 display: flex;
@@ -164,6 +180,8 @@ display: flex;
     height: 500px;
 }
 
+/* Footer design */
+
 footer {
     background-color: #393E46;
     height: 100px;
@@ -182,17 +200,9 @@ footer {
     color: #EEEEEE;
 }
 
-.add-cart-img {
-    position: absolute;
-    z-index: 1;
-    background-color: white;
-    margin-left: -90px;
-    margin-bottom: -70px;
-    bottom: 0;
-    scale: 0;
-}
-
 /* Animationer */
+
+/* Home animations */
 
 #fps-animation {
     animation: fps-animate;
@@ -265,16 +275,12 @@ footer {
 
 /* Products hover and add to cart animations*/
 
-/* use transition for add to cart img */
-
-
 .hover-animation:hover {
     animation: move;
     animation-duration: 500ms;
-    animation-fill-mode: both;
+    animation-fill-mode: forwards;
     
 }
-
 
 @keyframes move {
 
@@ -296,6 +302,33 @@ footer {
     scale: 0.5;
 }
 
+.add-cart-img {
+    position: absolute;
+    z-index: 1;
+    background-color: #00ADB5;
+    margin-left: -90px;
+    margin-bottom: -70px;
+    bottom: 0;
+    scale: 0;
+    border-radius: 25%;
+}
+
+.cart-hover:hover {
+    scale: 0.5;
+}
+
+.cart-hover:hover {
+    animation: hover-fix;
+}
+
+@keyframes hover-fix {
+    0% {
+        height: 490px;
+        width: 410px;
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+}
 
 /* test transition animation 
 
