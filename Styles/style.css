@@ -273,9 +273,10 @@ footer {
     }
 }
 
-/* Products hover and add to cart animations*/
+/* Products hover and add to cart animations */
 
-.hover-animation:hover {
+/* gör bilden större */
+.hover-animation:hover { 
     animation: move;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
@@ -298,27 +299,34 @@ footer {
     }
 }
 
-.hover-show-add-cart:hover ~ #add-cart {
+/* förstorar varukorg bilden när musen är över produkten */
+.hover-show-add-cart:hover ~ .add-cart-img {
     scale: 0.5;
 }
 
+/* förstorar varukorg bilden när musen är över varugorgbilden */
+.cart-hover:hover {
+    scale: 0.5;
+}
+
+
+
 .add-cart-img {
-    position: absolute;
+    position: relative;
     z-index: 1;
     background-color: #00ADB5;
     margin-left: -90px;
-    margin-bottom: -70px;
+    margin-top: -1000000px;
     bottom: 0;
     scale: 0;
     border-radius: 25%;
 }
 
-.cart-hover:hover {
-    scale: 0.5;
-}
-
-.cart-hover:hover {
-    animation: hover-fix;
+.cart-hover:hover + .product-item {
+    height: 490px;
+    width: 410px;
+    margin-top: -10px;
+    margin-left: -10px;
 }
 
 @keyframes hover-fix {
@@ -330,13 +338,3 @@ footer {
     }
 }
 
-/* test transition animation 
-
-.hover-animation {
-    transition: width 2s;
-}
-
-.hover-animation:hover {
-    width: 500px;
-}
-*/
