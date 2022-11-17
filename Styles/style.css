@@ -106,15 +106,8 @@ h2 {
 
 .product-item {
     text-align: center; 
-}
-
-.product-item:nth-child(-n+3) + .product-item:nth-child(-n+3) {
-    margin-left: 1%;
-    
-}
-
-.product-item:nth-child(4) {
-    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left:1%;
 }
 
 .product-design {
@@ -212,7 +205,9 @@ input {
 
 #submit {
     width: 100px;
+    margin-top: 10px;
     background-color: #EEEEEE;
+    cursor: pointer;
 }
 
 /* Om oss style */
@@ -356,14 +351,14 @@ footer {
 }
 
 .add-cart-img {
-    position: absolute;
+    position: relative;
     z-index: 1;
     background-color: #00ADB5;
-    margin-left: -90px;
-    margin-bottom: -70px;
-    bottom: 0;
     scale: 0;
     border-radius: 25%;
+    float: right;
+    margin-top: -100px;
+    margin-right: -10px;
 }
 
 .cart-hover:hover + .product-item {
