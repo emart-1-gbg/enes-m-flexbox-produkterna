@@ -1,7 +1,7 @@
 /* Allmän */
 
 body {
-    background-color: #EEEEEE;
+    background-color: #EEE;
     margin: 2px;
 }
 
@@ -212,20 +212,50 @@ input {
 
 /* Om oss style */
 
+.about-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .about-us-item {
-    height: 10px;
-    width: 10px;
-    background-color: red;
+    width: 350px;
+    height: 250px;
+    background-color: #393E46;
 }
 .about-us-item + .about-us-item {
-    margin-left: 10%;
+    margin-left: 5%;
 }
+
+.about-us-item-2 {
+    width: 350px;
+    height: 150px;
+    background-color: #00ADB5;
+}
+
+.about-us-item-2 + .about-us-item-2 {
+    margin-left: 5%;
+}
+
+.big-p-about {
+    font-family: serif;
+    font-weight: 900;
+    margin: 10px 0 0 -10px;
+    text-align: center;
+}
+
+.p-about {
+    max-width: 90%;
+    font-size: 170%;
+    justify-content: center;
+}
+
 
 /* Footer design */
 
 footer {
     background-color: #393E46;
-    height: 100px;
+    height: 50px;
     margin-left: -2px;
     position: absolute;
     width: 100%;
@@ -249,7 +279,7 @@ footer {
     animation: fps-animate;
     animation-iteration-count: infinite;
     animation-duration: 8s;
-    animation-delay: 10ms;
+    animation-delay: 20ms;
 }
 
 @keyframes fps-animate {
@@ -275,7 +305,7 @@ footer {
     animation: openworld-animate;
     animation-iteration-count: infinite;
     animation-duration: 8s;
-    animation-delay: 10ms;
+    animation-delay: 20ms;
 }
 
 @keyframes openworld-animate {
@@ -301,7 +331,7 @@ footer {
     animation: moba-animate;
     animation-iteration-count: infinite;
     animation-duration: 4s;
-    animation-delay: 10ms;
+    animation-delay: 20ms;
 }
 
 @keyframes moba-animate {
@@ -343,6 +373,7 @@ footer {
 /* förstorar varukorg bilden när musen är över produkten */
 .hover-show-add-cart:hover ~ .add-cart-img {
     scale: 0.5;
+    opacity: 0.8;
 }
 
 /* förstorar varukorg bilden när musen är över varugorgbilden */
