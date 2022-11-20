@@ -1,7 +1,7 @@
 /* Allmän */
 
 body {
-    background-color: #EEE;
+    background-color: rgb(139, 240, 255);
     margin: 2px;
 }
 
@@ -242,6 +242,7 @@ input {
     font-weight: 900;
     margin: 10px 0 0 -10px;
     text-align: center;
+    color: rgb(152, 164, 153);
 }
 
 .p-about {
