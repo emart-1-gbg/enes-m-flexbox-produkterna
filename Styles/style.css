@@ -238,7 +238,7 @@ input {
 }
 
 .big-p-about {
-    font-family: serif;
+    font-family: Georgia, serif;
     font-weight: 900;
     margin: 10px 0 0 -10px;
     text-align: center;
@@ -252,6 +252,7 @@ input {
 }
 
 #about-2 {
+    
     font-size: 70px;
     align-items: center;
 }
