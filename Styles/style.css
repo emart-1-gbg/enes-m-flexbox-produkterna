@@ -251,6 +251,18 @@ input {
     justify-content: center;
 }
 
+#about-2 {
+    font-size: 450%;
+    align-items: center;
+}
+
+#about-3 {
+    font-size: 406%;
+    line-height: 75px;
+    align-items: center;
+
+}
+
 
 /* Footer design */
 
