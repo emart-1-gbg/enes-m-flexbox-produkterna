@@ -1,3 +1,7 @@
 const cartContent = [];
 
-function getItemId();
+let addToCart = (id) => {
+    let selectedItem = id;
+    console.log(selectedItem.id)
+}
+
