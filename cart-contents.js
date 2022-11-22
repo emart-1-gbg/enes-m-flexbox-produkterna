@@ -1,22 +1,17 @@
 // ej kopierat 
 
-var basket = ['test'];
+var basket = [];
 
 let addToCart = (id) => {
     let selectedItem = id;
-    console.log(selectedItem.id)
-    if (selectedItem.id == 'add-fps-1') {
-        console.log('succsess')
-        basket.push('yes')
-        saveBasket();
-
-    } else {
-        console.log('fail')
-    }
+    console.log(`pressed ${selectedItem.id}`)
+    basket.push(selectedItem.id)
+    saveBasket()
+    console.log(`added ${selectedItem.id} to cart`)
 }
 
 function saveBasket() {
-    localStorage.setItem('basketData', JSON.stringify(basket));
+    sessionStorage.setItem('basketData', JSON.stringify(basket));
 }
 
 saveBasket();
