@@ -82,9 +82,16 @@ h1 {
 }
 
 .home-h5 {
-    margin-top: -30px;
-    padding-top: 5px;
-    color: #393E46;
+    margin-top: -35px;
+    padding: 5px;
+    color: #000;
+    font-size: 100%;
+    background-color: #00ADB5;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 100px;
+    border-radius: 10px;
 }
 
 /* Produkter design */

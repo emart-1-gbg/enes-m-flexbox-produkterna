@@ -1,1 +1,1 @@
-localStorage.getItem('basket')
+var cartData = JSON.parse(localStorage.getItem("basketData")); //get them back

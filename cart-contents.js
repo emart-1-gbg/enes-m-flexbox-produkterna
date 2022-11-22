@@ -1,6 +1,6 @@
 // ej kopierat 
 
-let basket = [];
+var basket = ['test'];
 
 let addToCart = (id) => {
     let selectedItem = id;
@@ -16,7 +16,7 @@ let addToCart = (id) => {
 }
 
 function saveBasket() {
-    localStorage.setItem('basket', null);
+    localStorage.setItem('basketData', JSON.stringify(basket));
 }
 
 saveBasket();
