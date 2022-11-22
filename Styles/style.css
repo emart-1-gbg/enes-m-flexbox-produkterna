@@ -218,26 +218,24 @@ input {
     flex-wrap: wrap;
 }
 
+.about-boxes + .about-boxes {
+    margin-left: 5%;
+}
+
 .about-us-item {
     width: 350px;
     height: 250px;
     background-color: #393E46;
-}
-.about-us-item + .about-us-item {
-    margin-left: 5%;
 }
 
 .about-us-item-2 {
     width: 350px;
     height: 150px;
     background-color: #00ADB5;
+    margin: 0;
 }
 
-.about-us-item-2 + .about-us-item-2 {
-    margin-left: 5%;
-}
-
-.big-p-about {
+.top-p-about {
     font-family: Georgia, serif;
     font-weight: 900;
     margin: 10px 0 0 -10px;
@@ -252,9 +250,8 @@ input {
 }
 
 #about-2 {
-    
     font-size: 90px;
-    align-items: center;
+    line-height: 110px;
 }
 
 #about-3 {
