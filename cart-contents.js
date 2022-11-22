@@ -10,8 +10,7 @@ let addToCart = (id) => {
         basket.push('yes')
         saveBasket();
 
-    }
-    else {
+    } else {
         console.log('fail')
     }
 }

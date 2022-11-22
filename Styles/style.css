@@ -215,52 +215,51 @@ input {
 .about-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+}
+
+.about-boxes {
+    background-color: black;
+    height: 400px;
+    width: 300px;
+    padding: 1px;
 }
 
 .about-boxes + .about-boxes {
     margin-left: 5%;
 }
 
-.about-us-item {
-    width: 350px;
-    height: 250px;
+.about-item-top {
     background-color: #393E46;
-}
-
-.about-us-item-2 {
-    width: 350px;
-    height: 150px;
-    background-color: #00ADB5;
-    margin: 0;
-}
-
-.top-p-about {
+    color: #007532;
+    height: 250px;
     font-family: Georgia, serif;
-    font-weight: 900;
-    margin: 10px 0 0 -10px;
     text-align: center;
-    color: rgb(152, 164, 153);
 }
 
-.p-about {
-    max-width: 90%;
-    font-size: 170%;
-    justify-content: center;
+#about-top-1 {
+    font-size: 450%;
+    font-weight: 600;
+    line-height: 80px;
 }
 
-#about-2 {
-    font-size: 90px;
+#about-top-2 {
+    font-size: 500%;
+    font-weight: 600;
     line-height: 110px;
 }
 
-#about-3 {
-    font-size: 75px;
-    line-height: 75px;
-    align-items: center;
-
+#about-top-3 {
+    font-size: 400%;
+    font-weight: 700;
+    line-height: 80px;
 }
 
+.about-item-bottom {
+    background-color: #00ADB5;
+    height: 150px;
+    text-align: center;
+    font-size: 100%; /*200%*/
+}
 
 /* Footer design */
 
