@@ -1,14 +1,48 @@
-//get them back
+// hämtar information
+function updateBasket() {
+    basket = JSON.parse(sessionStorage.getItem("basketData")); 
+}
+updateBasket()
 
-var basket = JSON.parse(sessionStorage.getItem("basketData")); 
-
+// väljer html elementen som varukorg information visas i
 const cartVisual = document.getElementById('cart-list')
+
+let cartData = []
 
 for (let i = 0; i < basket.length; i++) {
     console.log(basket[i])
-    if (i == 'fps-1') {
-        cartVisual.innerHTML = 'testing'
-        console.log('succsess')
+    cartData.push(basket[i])
+    console.log(`${cartData} is in cartData`)
+}
+
+// for (let i = 0; i < cartData.length; i++) {
+//     if (cartData.itemName)== 'fps-1' {
+//         console.log('succsess')
+//     }
+// }
+
+
+cartData.forEach((item)=>{
+    li = document.createElement("li");
+    li.innerText = item;
+    cartVisual.appendChild(li);
+  }
+)
+
+function buyFunction() {
+    if (cartData.length === 0) {
+        alert('Din varukorg är tomt. Lägg till en vara först.')
+    } else {
+        const removeItems = document.getElementById('cart-list')
+        while (removeItems.firstChild) {
+            removeItems.removeChild(removeItems.lastChild);
+            basket = []
+            updateBasket()
+
+        }
+        alert('Ditt köp genomförs!');
+
     }
     
+
 }

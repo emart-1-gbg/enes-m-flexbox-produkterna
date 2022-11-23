@@ -31,18 +31,28 @@
             </div>
         </nav>
 
-        <h1 class="cart-title">
-            Vagn
-        </h1>
+        <div class="cart-container">
+            <h1 class="cart-title">
+                Vagn
+            </h1>
+
+            <input type="button" value="Köp" id="cart-button" onclick="buyFunction()">
+        </div>
+        
 
         <div class="cart-content" >
 
-            <p id="cart-list">
+            <ul id="cart-list">
 
-            </p>
+            </ul>
             
         </div>
 
+
+        <footer style="bottom: 0;">
+            <a href="/contacts.html"> <p class="footer-contents"> Kontakta oss </p></a>
+        </footer>        
+        
         <script src="/cart.js" defer></script>
     </body>
 </html>
