@@ -7,6 +7,7 @@ updateBasket()
 // väljer html elementen som varukorg information visas i
 const cartVisual = document.getElementById('cart-list')
 
+
 let cartData = []
 
 for (let i = 0; i < basket.length; i++) {
@@ -14,13 +15,6 @@ for (let i = 0; i < basket.length; i++) {
     cartData.push(basket[i])
     console.log(`${cartData} is in cartData`)
 }
-
-// for (let i = 0; i < cartData.length; i++) {
-//     if (cartData.itemName)== 'fps-1' {
-//         console.log('succsess')
-//     }
-// }
-
 
 cartData.forEach((item)=>{
     li = document.createElement("li");
@@ -38,11 +32,9 @@ function buyFunction() {
             removeItems.removeChild(removeItems.lastChild);
             basket = []
             updateBasket()
-
         }
+
         alert('Ditt köp genomförs!');
-
     }
-    
-
 }
+
