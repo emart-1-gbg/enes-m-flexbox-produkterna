@@ -1,7 +1,7 @@
 /* Allmän */
 
 body {
-    background-color: rgb(181, 240, 255);
+    background-color: rgba(181, 240, 255, 0.7);
     margin: 2px;
 }
 
@@ -180,14 +180,18 @@ hr {
 
 .cart-container {
     display: flex;
-    min-width: 90%;
+    width: 100%;
+}
+
+.cart-amount {
+    margin-left: 40px;
 }
 
 #cart-button {
     height: 50px;
     width: 150px;
-    margin-top: 70px;
-    margin-left: 1090px;
+    float: right;
+    position: relative;left: -40px;top: -10px;
 }
 
 /* Kontakter design */
