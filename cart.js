@@ -1,3 +1,5 @@
+// delvis kopierat
+
 // hämtar information som sparas i sessionStorage
 function getBasket() {
     basket = JSON.parse(sessionStorage.getItem("basketData")); 
