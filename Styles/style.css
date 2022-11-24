@@ -29,7 +29,6 @@ body {
 /* Nav design */
 
 .nav-item {
-    flex-grow: 1;
     align-items: center;
     flex-grow: 20;
     text-align: center;
