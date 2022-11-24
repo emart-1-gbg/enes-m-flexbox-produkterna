@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="en" class="font">
-    <head>
-        <meta charset="UTF-8">
-        <title>Ditt vagn</title>
-        <link rel="stylesheet" href="/Styles/style.css">
-        
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Ditt vagn</title>
+    <link rel="stylesheet" href="/Styles/style.css">
+    
+</head>
+<body>
 
-        <!--Nav items-->
-        <nav>
-            <div class="container nav-bg">
+    <!--Nav items-->
+    <nav>
+        <div class="container nav-bg">
 
-                <div onclick="location.href='index.html'" style="cursor: pointer;" 
-                class="nav-item navbar-design">Hem</div>
+            <div onclick="location.href='index.html'" style="cursor: pointer;" 
+            class="nav-item navbar-design">Hem</div>
 
-                <div onclick="location.href='products.html'" style="cursor: pointer;" 
-                class="nav-item navbar-design">Produkter</div>
+            <div onclick="location.href='products.html'" style="cursor: pointer;" 
+            class="nav-item navbar-design">Produkter</div>
 
-                <div onclick="location.href='contacts.html'" style="cursor: pointer;" 
-                class="nav-item navbar-design">Kontakter</div> 
+            <div onclick="location.href='contacts.html'" style="cursor: pointer;" 
+            class="nav-item navbar-design">Kontakter</div> 
 
-                <div onclick="location.href='about.html'" style="cursor: pointer;" 
-                class="nav-item navbar-design">Om oss</div> 
+            <div onclick="location.href='about.html'" style="cursor: pointer;" 
+            class="nav-item navbar-design">Om oss</div> 
 
-                <div onclick="location.href='cart.html'" style="cursor: pointer; background-color: #03858b;" 
-                class="nav-item navbar-design"> 
-                    <img src="/img/cart.png" alt="shopping-cart" class="img-cart" height="40px">  
-                </div>
+            <div onclick="location.href='cart.html'" style="cursor: pointer; background-color: #03858b;" 
+            class="nav-item navbar-design"> 
+                <img src="/img/cart.png" alt="shopping-cart" class="img-cart" height="40px">  
             </div>
-        </nav>
-
-        <div class="cart-container">
-            <h1 class="cart-title">
-                Vagn
-            </h1>
-
-            
         </div>
+    </nav>
 
-        <input type="button" value="Köp" id="cart-button" onclick="buyFunction()" class="cursor-pointer">
+    <div class="cart-container">
+        <h1 class="cart-title">
+            Vagn
+        </h1>
 
-        <p class="cart-amount">
-            Du har <span id="amount"></span> produkter i din varukorg
-        </p>
-
-        <div class="cart-content" >
-            
-            <ul id="cart-list">
-
-            </ul>
-            
-        </div>
-
-
-        <footer style="bottom: 0;">
-            <a href="/contacts.html"> <p class="footer-contents"> Kontakta oss </p></a>
-        </footer>        
         
-        <script src="/cart.js" defer></script>
-    </body>
+    </div>
+
+    <input type="button" value="Köp" id="cart-button" onclick="buyFunction()" class="cursor-pointer">
+
+    <p class="cart-amount">
+        Du har <span id="amount"></span> produkter i din varukorg
+    </p>
+
+    <div class="cart-content" >
+        
+        <ul id="cart-list">
+
+        </ul>
+        
+    </div>
+
+
+    <footer style="bottom: 0;">
+        <a href="/contacts.html"> <p class="footer-contents"> Kontakta oss </p></a>
+    </footer>        
+    
+    <script src="/cart.js" defer></script>
+</body>
 </html>

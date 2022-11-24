@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="/Styles/style.css">
+</head>
+<body>
+    <div onclick="location.href='index.html'" class="docs-back cursor-pointer">
+        Tillbaka till startsida
+    </div>
+
+    <ul style="line-height: 20px;">
+        <li> I produkter sidan när :hover är aktivt förstoras den och varukorg bilden vanligt, men om musen komemr över 
+            varukorg bilden går bort bilden. För att fixa det har den bilden också en :hover som förstorar sig själv.
+            <br> Dock när musen är over varukorgen minskar item och kunde inte få den att stanna stort. 
+        </li>
+
+        <li style="margin-top: 20px;"> På om oss sidan om man ligger margin-top på text i nedre rutor flyttar sig hela ruutan. 
+            Kunde inte fixa.
+        </li>
+
+        <li style="margin-top: 20px;"> Efter man trycker Köp knappen på varukorg sidan går produkterna som finns i listan bort,
+            men om man refreshar eller går till en annan sida och kommer tillbaks till varukorg sidan kommer varorna tillbaks. <br>
+            Kunde inte rensera sessionStorage efter man trycker knappen. 
+        </li>
+
+        <li style="margin-top: 20px;"> Eftersom alla sidor har olika storlek, footer var på olika platser på varje sida.
+            På visa sidor behövde jag ändra footers position manuelt med t.ex. bottom: 0;  
+        </li>
+    </ul>
+
+</body>
+</html>

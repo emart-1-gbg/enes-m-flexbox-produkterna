@@ -13,5 +13,4 @@ let addToCart = (id) => {
 function saveBasket() {
     sessionStorage.setItem('basketData', JSON.stringify(basket));
 }
-
 saveBasket();

@@ -1,85 +1,85 @@
 <!DOCTYPE html>
 <html lang="en" class="font">
-    <head>
-        <meta charset="UTF-8">
-        <title>Kontakter</title>
-        <link rel="stylesheet" href="/Styles/style.css">
-        <script src="/submitFunction.js" defer></script>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakter</title>
+    <link rel="stylesheet" href="/Styles/style.css">
+    <script src="/submitFunction.js" defer></script>
+</head>
+<body>
 
-        <!--Nav items-->
-        <nav>
-            <div class="container nav-bg">
+    <!--Nav items-->
+    <nav>
+        <div class="container nav-bg">
 
-                <div onclick="location.href='index.html'" style="cursor: pointer;" 
-                class="nav-item navbar-design">Hem</div>
+            <div onclick="location.href='index.html'" style="cursor: pointer;" 
+            class="nav-item navbar-design">Hem</div>
 
-                <div onclick="location.href='products.html'" style="cursor: pointer;" 
-                class="nav-item navbar-design">Produkter</div>
+            <div onclick="location.href='products.html'" style="cursor: pointer;" 
+            class="nav-item navbar-design">Produkter</div>
 
-                <div onclick="location.href='contacts.html'" style="cursor: pointer; background-color: #03858b;" 
-                class="nav-item navbar-design">Kontakter</div> 
+            <div onclick="location.href='contacts.html'" style="cursor: pointer; background-color: #03858b;" 
+            class="nav-item navbar-design">Kontakter</div> 
 
-                <div onclick="location.href='about.html'" style="cursor: pointer;" 
-                class="nav-item navbar-design">Om oss</div> 
+            <div onclick="location.href='about.html'" style="cursor: pointer;" 
+            class="nav-item navbar-design">Om oss</div> 
 
-                <div onclick="location.href='cart.html'" style="cursor: pointer;" 
-                class="nav-item navbar-design"> 
-                    <img src="/img/cart.png" alt="shopping-cart" class="img-cart" height="40px">  
-                </div>
+            <div onclick="location.href='cart.html'" style="cursor: pointer;" 
+            class="nav-item navbar-design"> 
+                <img src="/img/cart.png" alt="shopping-cart" class="img-cart" height="40px">  
             </div>
-        </nav>
+        </div>
+    </nav>
+
+
+    <section class="contacts-content">
+        <div class="container-contacts">
+        <h1 class="contacts-title" style="margin-bottom: 20px;">
+            Kontakter
+        </h1>
+
+        <p class="contacts-p">
+            <span style="font-size: 150%;"> Game Shop <br> </span> 
+            E-mail: game.shop@support.com <br>
+            Telephone: 076 679 98 54<br>
+            Adress: <br>
+
+        </p>
+
+    </div>
+
+    <div>
+
+        <h3 style="margin-top: 50px;">Skriv ett meddelande</h3>
+        <div class="contacts-forum">
+            <section>
+                <label for="fname">Förnamn</label>
+                <input type="text" name="firstname" id="fname" style="margin-left: 20px;">
+            </section>
+            
+            <section>
+                <label for="lname">Efternamn</label>
+                <input type="text" name="lastname" id="lname">
+            </section>
+
+            <section>
+                <label for="email">E-Mail</label>
+                <input type="email" name="email" id="email" style="margin-left: 45px;">
+            </section>
+            <br>
+            <section>
+                <label for="resizable">Skriv din meddelande</label><br>
+                <textarea id="resizable" name="submission" rows="4" cols="50"></textarea>
+            </section>
     
-
-        <section class="contacts-content">
-            <div class="container-contacts">
-            <h1 class="contacts-title" style="margin-bottom: 20px;">
-                Kontakter
-            </h1>
-
-            <p class="contacts-p">
-                <span style="font-size: 150%;"> Game Shop <br> </span> 
-                E-mail: game.shop@support.com <br>
-                Telephone: 076 679 98 54<br>
-                Adress: <br>
-
-            </p>
-
+                <input type="submit" value="Skicka" id="submit" onclick="submitFunction()">
         </div>
 
-        <div>
+    </div>
 
-            <h3 style="margin-top: 50px;">Skriv ett meddelande</h3>
-            <div class="contacts-forum">
-                <section>
-                    <label for="fname">Förnamn</label>
-                    <input type="text" name="firstname" id="fname" style="margin-left: 20px;">
-                </section>
-                
-                <section>
-                    <label for="lname">Efternamn</label>
-                    <input type="text" name="lastname" id="lname">
-                </section>
+    <footer style="bottom: 0;">
+        <a href="/contacts.html"> <p class="footer-contents"> Kontakta oss </p></a>
+    </footer>
 
-                <section>
-                    <label for="email">E-Mail</label>
-                    <input type="email" name="email" id="email" style="margin-left: 45px;">
-                </section>
-                <br>
-                <section>
-                    <label for="resizable">Skriv din meddelande</label><br>
-                    <textarea id="resizable" name="submission" rows="4" cols="50"></textarea>
-                </section>
-        
-                    <input type="submit" value="Skicka" id="submit" onclick="submitFunction()">
-            </div>
-
-        </div>
-
-        <footer style="bottom: 0;">
-            <a href="/contacts.html"> <p class="footer-contents"> Kontakta oss </p></a>
-        </footer>
-
-    </body>
+</body>
 </html>

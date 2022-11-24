@@ -1,8 +1,8 @@
 // hämtar information som sparas i sessionStorage
-function updateBasket() {
+function getBasket() {
     basket = JSON.parse(sessionStorage.getItem("basketData")); 
 }
-updateBasket()
+getBasket()
 
 // väljer html elementen som varukorg information visas i
 const cartVisual = document.getElementById('cart-list')
@@ -17,6 +17,7 @@ for (let i = 0; i < basket.length; i++) {
     console.log(`${cartData} is in cartData`)
 }
 
+// lägger varan i html
 cartData.forEach((item)=>{
     li = document.createElement("li");
     li.innerText = item;
@@ -24,10 +25,12 @@ cartData.forEach((item)=>{
   }
 )
 
+// hittar hur mychet varor det finns
 function amount() {
     document.getElementById('amount').innerHTML = cartData.length
 }
 
+// köp button tar bort från listan 
 function buyFunction() {
     if (cartData.length === 0) {
         alert('Din varukorg är tomt. Lägg till en vara först.')
